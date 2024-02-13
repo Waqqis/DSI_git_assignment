@@ -14,7 +14,7 @@ def compute_avg_delay(data, group_by: str = 'Route'):
     """
     Compute the average delay aggregated by specified column
     """
-    return data.groupby(group_by).mean().reset_index()
+    return data.groupby('Route').mean().reset_index()
 
 
 def main():
